@@ -77,41 +77,10 @@ public class DoublyLinkedList <T> implements Iterable <T>{
         -- size;                                                    // decrease size of list by 1
 
         if(isEmpty()) tail = null;                                  // if list is empty set tail to null now head & tail are null
-        else head.prev = null;
+        else head.prev = null;                                      // do a memory clean of previous node
 
+        return data;                                                // returns data of node that was removed
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
